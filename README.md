@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![<ORG_NAME>](https://circleci.com/gh/darostegui/DevOps-UDacity-Microservices-project.svg?style=svg)](https://app.circleci.com/pipelines/github/darostegui/DevOps-UDacity-Microservices-project)
 
 ## Project Overview
 
