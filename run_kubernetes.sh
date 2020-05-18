@@ -5,11 +5,11 @@
 # Step 1:
 # This is your Docker ID/path
 # dockerpath=<>
-dockerpath=darostegui/prediction_service
+dockerpath='darostegui/microservices:latest'
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl run prediction-service --image=docker.io/${dockerpath} --port=8000
+kubectl run microservice --image=$dockerpath --port=80
 
 
 # Step 3:
@@ -19,4 +19,7 @@ kubectl get pods
 # Step 4:
 # Forward the container port to a host
 kubectl port-forward deployments/prediction-service 8000:80
+
+# Get the logs
+kubectl logs `kubectl get pods -o=name`
 
