@@ -6,7 +6,7 @@
 # Step 1:
 # Create dockerpath
 # dockerpath=<your docker ID/path>
-dockerpath=darostegui/prediction_service
+export dockerpath="darostegui/prediction_service"
 
 # Step 2:  
 # Authenticate & tag
